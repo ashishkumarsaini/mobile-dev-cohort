@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import LoginForm from './login-form';
 
 const index = () => {
   return (
-    <LoginForm />
+    <SafeAreaView>
+      <LoginForm />
+    </SafeAreaView>
   )
 }
 
