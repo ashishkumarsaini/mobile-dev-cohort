@@ -11,6 +11,8 @@ export default function Index() {
       <Link href={'/nested/profile/1'}>Nested User 1</Link>
       <Link href={'/nested/deep/link'}>Nested Deep Link</Link>
       <Link href={'/nested/deep/link/1'}>Nested Deep Link 1</Link>
+      <Link href={'/login'}>Login</Link>
+      <Link href={'/signup'}>Signup</Link>
     </View>
   );
 }
