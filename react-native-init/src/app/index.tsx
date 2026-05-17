@@ -1,13 +1,19 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { StatusBar, StyleSheet } from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import LoginForm from './login-form';
 
 const index = () => {
   return (
-    <SafeAreaView>
-      <LoginForm />
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <SafeAreaView>
+        <StatusBar
+          animated={true}
+          barStyle={'dark-content'}
+        />
+        <LoginForm />
+      </SafeAreaView>
+    </SafeAreaProvider>
   )
 }
 
